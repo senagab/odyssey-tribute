@@ -1,5 +1,49 @@
-$bgColor: blue;
+@use 'hero';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$bgColor: #1b1b1b;
+$textmain: #fff;
+$textsecondary: #d9d9d9;
 
 body {
     background-color: $bgColor;
+}
+
+@mixin text($fontsize: 18px) {
+    font-size: $fontsize;
+    color: $textmain;
+}
+
+@mixin title($fontsize: 12px) {
+    @include text($fontsize);
+    color: $textsecondary;
+}
+
+.text--big {
+    @include text(24px);
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(12px);
+}
+
+.title--big {
+    @include title(70px);
+}
+
+.title--big {
+    @include title(56px);
+}
+
+.title--small {
+    @include title(24px);
 }
