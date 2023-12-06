@@ -1,4 +1,6 @@
 @use 'hero';
+@use 'header';
+@use 'variaveis';
 
 * {
     margin: 0;
@@ -6,22 +8,18 @@
     box-sizing: border-box;
 }
 
-$bgColor: #1b1b1b;
-$textmain: #fff;
-$textsecondary: #d9d9d9;
-
 body {
-    background-color: $bgColor;
+    background-color: variaveis.$bgColor;
 }
 
 @mixin text($fontsize: 18px) {
     font-size: $fontsize;
-    color: $textmain;
+    color: variaveis.$textsecondary;
 }
 
 @mixin title($fontsize: 12px) {
     @include text($fontsize);
-    color: $textsecondary;
+    color: variaveis.$textmain;
 }
 
 .text--big {
@@ -41,7 +39,7 @@ body {
 }
 
 .title--big {
-    @include title(56px);
+    @include title(70px);
 }
 
 .title--small {

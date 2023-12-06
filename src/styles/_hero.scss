@@ -7,25 +7,45 @@
     background-repeat: no-repeat;
 
     &__content {
-        // max-width: 478px;
+        display: flex;
+        justify-content: space-between;
+        padding: 15% 60px;
         
         &__sidebar {
+            list-style: none;
+            display: flex;
+            align-items: center;
 
-            &__item {
+            .list {
+                list-style: none;
 
-                img {
-                    width: 20px;
-                    height: 20px;
+                &__item {
+                    padding-bottom: 20px;
+                    opacity: .8;
+                    cursor: pointer;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    .line {
+                        height: 80px;
+                        width: 1px;
+                        margin: 0 auto;
+                        border: 2px solid rgba(255,255,255, .8);
+                    }
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
                 }
 
-                .line {
-
-                }
             }
         }
 
         &__title {
-            padding: 138px 80px;
+            width: 550px;
             text-align: right;
         }
     }
