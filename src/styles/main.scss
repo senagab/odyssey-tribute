@@ -27,6 +27,8 @@ body {
 @mixin title($fontsize: 12px) {
     @include text($fontsize);
     color: variaveis.$textmain;
+    font-family: 'Inter';
+    font-weight: bold;
 }
 
 @mixin text($fontsize: 18px) {

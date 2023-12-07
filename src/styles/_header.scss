@@ -15,12 +15,13 @@
         text-decoration: none;
 
         &__logo {
-
+            letter-spacing: -2px;
         }
 
         &__links {
             list-style: none;
             display: flex;
+            letter-spacing: -2px;
 
             &__item {
                 display: flex;
