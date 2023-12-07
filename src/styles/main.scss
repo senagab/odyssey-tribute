@@ -13,6 +13,17 @@ body {
     background-color: variaveis.$bgColor;
 }
 
+@font-face {
+    font-family: 'Inter';
+    src: url(../../assets/fonts/inter/Inter-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../../assets/fonts/inter/Inter-Bold.ttf);
+    font-weight: 700;
+}
 @mixin title($fontsize: 12px) {
     @include text($fontsize);
     color: variaveis.$textmain;
