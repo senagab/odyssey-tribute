@@ -9,7 +9,7 @@
     z-index: 1;
 
     &__container {
-        padding: 8px 36px;
+        padding: 20px 36px;
         display: flex;
         justify-content: space-between;
         text-decoration: none;
@@ -28,5 +28,10 @@
 
             }
         }
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
     }
 }

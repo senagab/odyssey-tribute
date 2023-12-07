@@ -1,6 +1,7 @@
 @use 'hero';
 @use 'header';
 @use 'variaveis';
+@use 'author';
 
 * {
     margin: 0;
@@ -12,14 +13,14 @@ body {
     background-color: variaveis.$bgColor;
 }
 
-@mixin text($fontsize: 18px) {
-    font-size: $fontsize;
-    color: variaveis.$textsecondary;
-}
-
 @mixin title($fontsize: 12px) {
     @include text($fontsize);
     color: variaveis.$textmain;
+}
+
+@mixin text($fontsize: 18px) {
+    font-size: $fontsize;
+    color: variaveis.$textsecondary;
 }
 
 .text--big {
@@ -38,8 +39,8 @@ body {
     @include title(70px);
 }
 
-.title--big {
-    @include title(70px);
+.title {
+    @include title(56px);
 }
 
 .title--small {

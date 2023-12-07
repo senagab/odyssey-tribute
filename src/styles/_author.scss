@@ -1,0 +1,52 @@
+.author {
+    min-width: 1024px;
+    width: 100%;
+    min-height: 600px;
+    background-image: url(../img/author/author-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+
+        &__quote {
+            padding: 150px 80px 60px;
+
+            &__item {
+                margin-bottom: 20px;
+            }
+
+            .title {
+                font-size: 35px;
+                // max-width: 500px;
+            }
+        }
+
+        &__bio {
+            padding: 90px 80px 90px;
+            width: 100%;
+            min-height: 80vh;
+            /* From https://css.glass */
+            background: rgba(0, 136, 255, 0);
+            border-radius: 4px;
+            box-shadow: -10px 0px 10px 1px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(6.6px);
+            -webkit-backdrop-filter: blur(6.6px);
+
+            &__item {
+                margin-bottom: 20px;
+            }
+
+            &__picture {
+                border-radius: 50%;
+                height: 170px;
+                width: 170px;
+
+                img {
+                }
+            }
+        }
+    }
+}
