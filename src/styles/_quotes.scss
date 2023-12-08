@@ -1,0 +1,60 @@
+.quotes {
+    background-image: url(../../dist/img/quotes/orb-1-bg.png);
+    min-width: 1024px;
+    width: 100%;
+    min-height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__container {
+
+        &__orbs {
+            position: relative;
+
+            &__list {
+                padding: 60px 30px;
+                list-style: none;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translate(0,30%);
+
+                &__item {
+                    cursor: pointer;
+                    animation-name: floating;
+                    animation-duration: 2s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease-in-out;
+                    margin-left: 30px;
+                    margin-top: 5px;
+                    border-radius: 50%;
+
+                    @keyframes floating {
+                        0% { transform: translate(1s, 0px); }
+                        50% { transform: translate(0, 7px); }
+                        100% { transform: translate(0, -0px); }
+                    }
+
+                    .orb {
+                        height: 50px;
+                        width: 50px;
+                        margin-bottom: 30px;
+
+                        img {
+
+                        }
+                    }
+                }
+            }
+        }
+
+        &__text {
+            text-align: center;
+            padding: 150px 180px 30px;
+
+            .title--big {
+
+            }
+        }
+    }
+}
